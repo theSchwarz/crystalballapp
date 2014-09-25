@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="JSViewController" sceneMemberID="viewController">
@@ -15,13 +15,43 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CB00001" translatesAutoresizingMaskIntoConstraints="NO" id="sBq-zD-8fW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Ask a question &amp; shake!" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="173" translatesAutoresizingMaskIntoConstraints="NO" id="NnD-9C-SUj">
+                                <rect key="frame" x="74" y="228" width="173" height="96"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="32"/>
+                                <color key="textColor" red="0.19769502976470832" green="0.035401630211033805" blue="0.75658118206521741" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.16010287731324041" green="0.16030267263122283" blue="0.66620669157608692" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sBq-zD-8fW" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="15O-pL-MdW"/>
+                            <constraint firstAttribute="bottom" secondItem="sBq-zD-8fW" secondAttribute="bottom" id="1Pf-sj-htI"/>
+                            <constraint firstAttribute="bottom" secondItem="sBq-zD-8fW" secondAttribute="bottom" id="6cI-J9-wHI"/>
+                            <constraint firstItem="sBq-zD-8fW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="GbK-Jl-GXI"/>
+                            <constraint firstItem="sBq-zD-8fW" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="anw-tF-dkc"/>
+                            <constraint firstItem="sBq-zD-8fW" firstAttribute="top" secondItem="NnD-9C-SUj" secondAttribute="bottom" constant="-324" id="mV5-Gk-jrS"/>
+                            <constraint firstAttribute="trailing" secondItem="sBq-zD-8fW" secondAttribute="trailing" id="syH-ja-fFE"/>
+                            <constraint firstAttribute="trailing" secondItem="sBq-zD-8fW" secondAttribute="trailing" id="y1C-Um-ExG"/>
+                            <constraint firstItem="sBq-zD-8fW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="zMK-zf-X4F"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="sBq-zD-8fW" id="6e2-T6-cza"/>
+                        <outlet property="predictionLabel" destination="NnD-9C-SUj" id="kR3-YP-Zqo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="CB00001" width="320" height="568"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

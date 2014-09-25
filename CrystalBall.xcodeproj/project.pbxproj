@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2A9698419D458E7006CB173 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A9698319D458E7006CB173 /* images.xcassets */; };
 		E72D09D119BCF5C700E00141 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72D09D019BCF5C700E00141 /* Foundation.framework */; };
 		E72D09D319BCF5C700E00141 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72D09D219BCF5C700E00141 /* CoreGraphics.framework */; };
 		E72D09D519BCF5C700E00141 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72D09D419BCF5C700E00141 /* UIKit.framework */; };
@@ -15,12 +16,12 @@
 		E72D09E119BCF5C700E00141 /* JSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E72D09E019BCF5C700E00141 /* JSAppDelegate.m */; };
 		E72D09E419BCF5C700E00141 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E72D09E219BCF5C700E00141 /* Main.storyboard */; };
 		E72D09E719BCF5C700E00141 /* JSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E72D09E619BCF5C700E00141 /* JSViewController.m */; };
-		E72D09E919BCF5C700E00141 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E72D09E819BCF5C700E00141 /* Images.xcassets */; };
 		E72D09F019BCF5C700E00141 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72D09EF19BCF5C700E00141 /* XCTest.framework */; };
 		E72D09F119BCF5C700E00141 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72D09D019BCF5C700E00141 /* Foundation.framework */; };
 		E72D09F219BCF5C700E00141 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E72D09D419BCF5C700E00141 /* UIKit.framework */; };
 		E72D09FA19BCF5C700E00141 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E72D09F819BCF5C700E00141 /* InfoPlist.strings */; };
 		E72D09FC19BCF5C700E00141 /* CrystalBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E72D09FB19BCF5C700E00141 /* CrystalBallTests.m */; };
+		E771A2B419BD21290009F06B /* JSCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = E771A2B319BD21290009F06B /* JSCrystalBall.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E2A9698319D458E7006CB173 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 		E72D09CD19BCF5C700E00141 /* CrystalBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72D09D019BCF5C700E00141 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E72D09D219BCF5C700E00141 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -47,12 +49,13 @@
 		E72D09E319BCF5C700E00141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E72D09E519BCF5C700E00141 /* JSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSViewController.h; sourceTree = "<group>"; };
 		E72D09E619BCF5C700E00141 /* JSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSViewController.m; sourceTree = "<group>"; };
-		E72D09E819BCF5C700E00141 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E72D09EE19BCF5C700E00141 /* CrystalBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrystalBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E72D09EF19BCF5C700E00141 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		E72D09F719BCF5C700E00141 /* CrystalBallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalBallTests-Info.plist"; sourceTree = "<group>"; };
 		E72D09F919BCF5C700E00141 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E72D09FB19BCF5C700E00141 /* CrystalBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBallTests.m; sourceTree = "<group>"; };
+		E771A2B219BD21290009F06B /* JSCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSCrystalBall.h; sourceTree = "<group>"; };
+		E771A2B319BD21290009F06B /* JSCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSCrystalBall.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,12 +115,14 @@
 		E72D09D619BCF5C700E00141 /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
+				E2A9698319D458E7006CB173 /* images.xcassets */,
+				E771A2B219BD21290009F06B /* JSCrystalBall.h */,
+				E771A2B319BD21290009F06B /* JSCrystalBall.m */,
 				E72D09DF19BCF5C700E00141 /* JSAppDelegate.h */,
 				E72D09E019BCF5C700E00141 /* JSAppDelegate.m */,
 				E72D09E219BCF5C700E00141 /* Main.storyboard */,
 				E72D09E519BCF5C700E00141 /* JSViewController.h */,
 				E72D09E619BCF5C700E00141 /* JSViewController.m */,
-				E72D09E819BCF5C700E00141 /* Images.xcassets */,
 				E72D09D719BCF5C700E00141 /* Supporting Files */,
 			);
 			path = CrystalBall;
@@ -229,7 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72D09E919BCF5C700E00141 /* Images.xcassets in Resources */,
+				E2A9698419D458E7006CB173 /* images.xcassets in Resources */,
 				E72D09DB19BCF5C700E00141 /* InfoPlist.strings in Resources */,
 				E72D09E419BCF5C700E00141 /* Main.storyboard in Resources */,
 			);
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E771A2B419BD21290009F06B /* JSCrystalBall.m in Sources */,
 				E72D09DD19BCF5C700E00141 /* main.m in Sources */,
 				E72D09E719BCF5C700E00141 /* JSViewController.m in Sources */,
 				E72D09E119BCF5C700E00141 /* JSAppDelegate.m in Sources */,
@@ -457,6 +463,7 @@
 				E72D0A0119BCF5C700E00141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E72D0A0219BCF5C700E00141 /* Build configuration list for PBXNativeTarget "CrystalBallTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +472,7 @@
 				E72D0A0419BCF5C700E00141 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
